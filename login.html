@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box; font-family: "微软雅黑", sans-serif;}
+        body{
+            background-color: #f5f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-box{
+            width: 420px;
+            background: #fff;
+            padding: 45px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+        .login-box h2{
+            text-align: center;
+            color: #2d3748;
+            margin-bottom: 35px;
+            font-weight: normal;
+        }
+        .input-item{
+            margin-bottom: 22px;
+        }
+        .input-item input{
+            width: 100%;
+            height: 46px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 0 15px;
+            font-size: 15px;
+            outline: none;
+            transition: border 0.3s;
+        }
+        .input-item input:focus{
+            border-color: #4299e1;
+        }
+        .btn{
+            width: 100%;
+            height: 46px;
+            background: #4299e1;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover{
+            background: #3182ce;
+        }
+        .back{
+            text-align: center;
+            margin-top: 22px;
+        }
+        .back a{
+            color: #4299e1;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>账号登录</h2>
+        <div class="input-item">
+            <input type="text" placeholder="请输入账号" id="username">
+        </div>
+        <div class="input-item">
+            <input type="password" placeholder="请输入密码" id="password">
+        </div>
+        <button class="btn" onclick="login()">登录</button>
+        <div class="back">
+            <a href="index.html">返回首页</a>
+        </div>
+    </div>
+
+    <script>
+        function login(){
+            var user = document.getElementById("username").value;
+            var pwd = document.getElementById("password").value;
+            
+            if(user == "" || pwd == ""){
+                alert("请输入账号和密码！");
+                return;
+            }
+            
+            alert("登录成功！");
+            window.location.href = "index.html"; // 跳转到首页
+        }
+    </script>
+</body>
+</html>

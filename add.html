@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>新增信息</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box; font-family: "微软雅黑";}
+        body{background-color: #f5f7fa;}
+        .top-nav{
+            width: 100%;
+            height: 60px;
+            background: #2d3748;
+            line-height: 60px;
+            padding: 0 30px;
+        }
+        .top-nav h1{
+            color: #fff;
+            font-size: 22px;
+            float: left;
+        }
+        .top-nav .user-info{
+            float: right;
+        }
+        .top-nav a{
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        .top-nav a:hover{
+            color: #4299e1;
+        }
+        .container{
+            width: 1200px;
+            margin: 30px auto;
+            display: flex;
+        }
+        .left-menu{
+            width: 220px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 8px #ddd;
+            padding: 20px 0;
+        }
+        .left-menu h3{
+            text-align: center;
+            color: #2d3748;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .left-menu ul{list-style: none;}
+        .left-menu li a{
+            display: block;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            color: #333;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .left-menu li a:hover{
+            background: #4299e1;
+            color: #fff;
+        }
+        .main-content{
+            flex: 1;
+            margin-left: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 8px #ddd;
+            padding: 30px;
+        }
+        .main-content h2{
+            color: #2d3748;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .content-item{
+            line-height: 2.2;
+            font-size: 16px;
+            color: #555;
+        }
+        .content-item a{
+            color: #4299e1;
+            text-decoration: none;
+        }
+        .form-box{
+            margin-top:20px;
+        }
+        .form-item{
+            margin:15px 0;
+        }
+        .form-item label{
+            display:inline-block;
+            width:100px;
+        }
+        .form-item input,.form-item textarea,.form-item select{
+            width:350px;
+            height:38px;
+            padding:0 10px;
+            border:1px solid #ddd;
+            border-radius:4px;
+        }
+        .form-item textarea{
+            height:100px;
+            resize:none;
+            padding:10px;
+        }
+        .btn{
+            padding:8px 20px;
+            background:#4299e1;
+            color:#fff;
+            border:none;
+            border-radius:4px;
+            cursor:pointer;
+            margin-right:10px;
+        }
+        .btn:hover{
+            background:#3182ce;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+        <h1>通用信息管理系统</h1>
+        <div class="user-info">
+            <a href="login.html">登录</a>
+            <a href="user.html">个人中心</a>
+            <a href="notice.html">系统公告</a>
+            <a href="login.html">安全退出</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left-menu">
+            <h3>功能导航</h3>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="user.html">用户信息管理</a></li>
+                <li><a href="info.html">数据信息管理</a></li>
+                <li><a href="notice.html">公告查看</a></li>
+                <li><a href="search.html">信息查询</a></li>
+                <li><a href="add.html">新增信息</a></li>
+                <li><a href="edit.html">修改信息</a></li>
+                <li><a href="del.html">删除信息</a></li>
+                <li><a href="help.html">帮助中心</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2>新增信息</h2>
+            <div class="form-box">
+                <div class="form-item">
+                    <label>信息标题：</label>
+                    <input type="text" placeholder="请填写信息标题">
+                </div>
+                <div class="form-item">
+                    <label>信息分类：</label>
+                    <select>
+                        <option>日常资料</option>
+                        <option>业务数据</option>
+                        <option>档案记录</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label>详细内容：</label>
+                    <textarea placeholder="输入具体信息内容"></textarea>
+                </div>
+                <div class="form-item">
+                    <label>备注说明：</label>
+                    <input type="text" placeholder="选填内容备注">
+                </div>
+                <div class="form-item">
+                    <button class="btn">提交保存</button>
+                    <button class="btn" style="background:#999">重置清空</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>信息管理系统 - 首页</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box; font-family: "微软雅黑";}
+        body{background-color: #f5f7fa;}
+        .top-nav{
+            width: 100%; height: 60px; background: #2d3748; line-height: 60px; padding: 0 30px;
+        }
+        .top-nav h1{color: #fff; font-size: 22px; float: left;}
+        .top-nav .user-info{float: right;}
+        .top-nav a{color: #fff; text-decoration: none; margin: 0 15px; font-size: 16px;}
+        .top-nav a:hover{color: #4299e1;}
+        .container{width: 1200px; margin: 30px auto; display: flex;}
+        .left-menu{
+            width: 220px; background: #fff; border-radius: 5px; box-shadow: 0 0 8px #ddd; padding: 20px 0;
+        }
+        .left-menu h3{text-align: center; color: #2d3748; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee;}
+        .left-menu ul{list-style: none;}
+        .left-menu li a{
+            display: block; height: 45px; line-height: 45px; text-align: center; color: #333; text-decoration: none; font-size: 15px;
+        }
+        .left-menu li a:hover{background: #4299e1; color: #fff;}
+        .main-content{
+            flex: 1; margin-left: 20px; background: #fff; border-radius: 5px; box-shadow: 0 0 8px #ddd; padding: 30px;
+        }
+        .main-content h2{
+            color: #2d3748; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee;
+        }
+        .content-item{line-height: 2.2; font-size: 16px; color: #555;}
+        .content-item a{color: #4299e1; text-decoration: none;}
+        .module-box{margin: 20px 0; padding: 20px; background: #f8f9fa; border-radius: 4px;}
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+        <h1>通用信息管理系统</h1>
+        <div class="user-info">
+            <a href="login.html">登录</a>
+            <a href="user.html">个人中心</a>
+            <a href="notice.html">系统公告</a>
+            <a href="login.html">安全退出</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left-menu">
+            <h3>功能导航</h3>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="user.html">用户信息管理</a></li>
+                <li><a href="info.html">数据信息管理</a></li>
+                <li><a href="notice.html">公告查看</a></li>
+                <li><a href="search.html">信息查询</a></li>
+                <li><a href="add.html">新增信息</a></li>
+                <li><a href="edit.html">修改信息</a></li>
+                <li><a href="del.html">删除信息</a></li>
+                <li><a href="help.html">帮助中心</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2>系统首页</h2>
+            <div class="content-item">
+                <p>欢迎使用信息管理系统前台页面！</p>
+                <p>左侧为系统全部功能菜单，点击对应菜单可进入功能页面。</p>
+                <p>本系统包含：用户管理、数据管理、公告查看、信息增删改查等功能。</p>
+                <p>请先 <a href="login.html">登录系统</a> 后使用全部功能！</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

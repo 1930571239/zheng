@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>信息查询</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box; font-family: "微软雅黑";}
+        body{background-color: #f5f7fa;}
+        .top-nav{
+            width: 100%;
+            height: 60px;
+            background: #2d3748;
+            line-height: 60px;
+            padding: 0 30px;
+        }
+        .top-nav h1{
+            color: #fff;
+            font-size: 22px;
+            float: left;
+        }
+        .top-nav .user-info{
+            float: right;
+        }
+        .top-nav a{
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        .top-nav a:hover{
+            color: #4299e1;
+        }
+        .container{
+            width: 1200px;
+            margin: 30px auto;
+            display: flex;
+        }
+        .left-menu{
+            width: 220px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 8px #ddd;
+            padding: 20px 0;
+        }
+        .left-menu h3{
+            text-align: center;
+            color: #2d3748;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .left-menu ul{list-style: none;}
+        .left-menu li a{
+            display: block;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            color: #333;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .left-menu li a:hover{
+            background: #4299e1;
+            color: #fff;
+        }
+        .main-content{
+            flex: 1;
+            margin-left: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 8px #ddd;
+            padding: 30px;
+        }
+        .main-content h2{
+            color: #2d3748;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .search-box{
+            margin:30px 0;
+        }
+        .search-box input{
+            width:400px;
+            height:42px;
+            padding:0 15px;
+            border:1px solid #ddd;
+            border-radius:4px;
+        }
+        .btn{
+            padding:10px 20px;
+            background:#4299e1;
+            color:#fff;
+            border:none;
+            border-radius:4px;
+            cursor:pointer;
+            margin-left:10px;
+        }
+        .btn:hover{
+            background:#3182ce;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+        <h1>通用信息管理系统</h1>
+        <div class="user-info">
+            <a href="login.html">登录</a>
+            <a href="user.html">个人中心</a>
+            <a href="notice.html">系统公告</a>
+            <a href="login.html">安全退出</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left-menu">
+            <h3>功能导航</h3>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="user.html">用户信息管理</a></li>
+                <li><a href="info.html">数据信息管理</a></li>
+                <li><a href="notice.html">公告查看</a></li>
+                <li><a href="search.html">信息查询</a></li>
+                <li><a href="add.html">新增信息</a></li>
+                <li><a href="edit.html">修改信息</a></li>
+                <li><a href="del.html">删除信息</a></li>
+                <li><a href="help.html">帮助中心</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2>信息查询</h2>
+            <div class="search-box">
+                <input type="text" placeholder="请输入关键词进行信息搜索">
+                <button class="btn">立即搜索</button>
+            </div>
+            <div style="line-height:2.5;color:#555;">
+                <p>支持：标题搜索、内容检索、时间筛选、分类查询</p>
+                <p>可快速查找系统内所有已发布数据信息</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
